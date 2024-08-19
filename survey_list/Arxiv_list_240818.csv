@@ -1,0 +1,609 @@
+,Title,Abstract,Link
+0,DeepCCI: End-to-end Deep Learning for Chemical-Chemical Interaction Prediction,"Chemical-chemical interaction (CCI) plays a key role in predicting candidate
+drugs, toxicity, therapeutic effects, and biological functions. In various
+types of chemical analyses, computational approaches are often required due to
+the amount of data that needs to be handled. The recent remarkable growth and
+outstanding performance of deep learning have attracted considerable research
+attention. However,even in state-of-the-art drug analysis methods, deep
+learning continues to be used only as a classifier, although deep learning is
+capable of not only simple classification but also automated feature
+extraction. In this paper, we propose the first end-to-end learning method for
+CCI, named DeepCCI. Hidden features are derived from a simplified molecular
+input line entry system (SMILES), which is a string notation representing the
+chemical structure, instead of learning from crafted features. To discover
+hidden representations for the SMILES strings, we use convolutional neural
+networks (CNNs). To guarantee the commutative property for homogeneous
+interaction, we apply model sharing and hidden representation merging
+techniques. The performance of DeepCCI was compared with a plain deep
+classifier and conventional machine learning methods. The proposed DeepCCI
+showed the best performance in all seven evaluation metrics used. In addition,
+the commutative property was experimentally validated. The automatically
+extracted features through end-to-end SMILES learning alleviates the
+significant efforts required for manual feature engineering. It is expected to
+improve prediction performance, in drug analyses.",http://arxiv.org/abs/1704.08432v3
+1,Accelerating Drug Safety Assessment using Bidirectional-LSTM for SMILES Data,"Computational methods are useful in accelerating the pace of drug discovery.
+Drug discovery carries several steps such as target identification and
+validation, lead discovery, and lead optimisation etc., In the phase of lead
+optimisation, the absorption, distribution, metabolism, excretion, and toxicity
+properties of lead compounds are assessed. To address the issue of predicting
+toxicity and solubility in the lead compounds, represented in Simplified
+Molecular Input Line Entry System (SMILES) notation. Among the different
+approaches that work on SMILES data, the proposed model was built using a
+sequence-based approach. The proposed Bi-Directional Long Short Term Memory
+(BiLSTM) is a variant of Recurrent Neural Network (RNN) that processes input
+molecular sequences for the comprehensive examination of the structural
+features of molecules from both forward and backward directions. The proposed
+work aims to understand the sequential patterns encoded in the SMILES strings,
+which are then utilised for predicting the toxicity of the molecules. The
+proposed model on the ClinTox dataset surpasses previous approaches such as
+Trimnet and Pre-training Graph neural networks(GNN) by achieving a ROC accuracy
+of 0.96. BiLSTM outperforms the previous model on FreeSolv dataset with a low
+RMSE value of 1.22 in solubility prediction.",http://arxiv.org/abs/2407.18919v1
+2,Toxicity Detection in Drug Candidates using Simplified Molecular-Input Line-Entry System,"The need for analysis of toxicity in new drug candidates and the requirement
+of doing it fast have asked the consideration of scientists towards the use of
+artificial intelligence tools to examine toxicity levels and to develop models
+to a degree where they can be used commercially to measure toxicity levels
+efficiently in upcoming drugs. Artificial Intelligence based models can be used
+to predict the toxic nature of a chemical using Quantitative Structure Activity
+Relationship techniques. Convolutional Neural Network models have demonstrated
+great outcomes in predicting the qualitative analysis of chemicals in order to
+determine the toxicity. This paper goes for the study of Simplified Molecular
+Input Line-Entry System (SMILES) as a parameter to develop Long short term
+memory (LSTM) based models in order to examine the toxicity of a molecule and
+the degree to which the need can be fulfilled for practical use alongside its
+future outlooks for the purpose of real world applications.",http://arxiv.org/abs/2101.10831v1
+3,SMILES-Mamba: Chemical Mamba Foundation Models for Drug ADMET Prediction,"In drug discovery, predicting the absorption, distribution, metabolism,
+excretion, and toxicity (ADMET) properties of small-molecule drugs is critical
+for ensuring safety and efficacy. However, the process of accurately predicting
+these properties is often resource-intensive and requires extensive
+experimental data. To address this challenge, we propose SMILES-Mamba, a
+two-stage model that leverages both unlabeled and labeled data through a
+combination of self-supervised pretraining and fine-tuning strategies. The
+model first pre-trains on a large corpus of unlabeled SMILES strings to capture
+the underlying chemical structure and relationships, before being fine-tuned on
+smaller, labeled datasets specific to ADMET tasks. Our results demonstrate that
+SMILES-Mamba exhibits competitive performance across 22 ADMET datasets,
+achieving the highest score in 14 tasks, highlighting the potential of
+self-supervised learning in improving molecular property prediction. This
+approach not only enhances prediction accuracy but also reduces the dependence
+on large, labeled datasets, offering a promising direction for future research
+in drug discovery.",http://arxiv.org/abs/2408.05696v1
+4,Network-principled deep generative models for designing drug combinations as graph sets,"Combination therapy has shown to improve therapeutic efficacy while reducing
+side effects. Importantly, it has become an indispensable strategy to overcome
+resistance in antibiotics, anti-microbials, and anti-cancer drugs. Facing
+enormous chemical space and unclear design principles for small-molecule
+combinations, the computational drug-combination design has not seen generative
+models to meet its potential to accelerate resistance-overcoming drug
+combination discovery. We have developed the first deep generative model for
+drug combination design, by jointly embedding graph-structured domain knowledge
+and iteratively training a reinforcement learning-based chemical graph-set
+designer. First, we have developed Hierarchical Variational Graph Auto-Encoders
+(HVGAE) trained end-to-end to jointly embed gene-gene, gene-disease, and
+disease-disease networks. Novel attentional pooling is introduced here for
+learning disease-representations from associated genes' representations.
+Second, targeting diseases in learned representations, we have recast the
+drug-combination design problem as graph-set generation and developed a deep
+learning-based model with novel rewards. Specifically, besides chemical
+validity rewards, we have introduced a novel generative adversarial award,
+being generalized sliced Wasserstein, for chemically diverse molecules with
+distributions similar to known drugs. We have also designed a network
+principle-based reward for drug combinations. Numerical results indicate that,
+compared to graph embedding methods, HVGAE learns more informative and
+generalizable disease representations. Case studies on four diseases show that
+network-principled drug combinations tend to have low toxicity. The generated
+drug combinations collectively cover the disease module similar to FDA-approved
+drug combinations and could potentially suggest novel systems-pharmacology
+strategies.",http://arxiv.org/abs/2004.07782v2
+5,SMILES2Vec: An Interpretable General-Purpose Deep Neural Network for Predicting Chemical Properties,"Chemical databases store information in text representations, and the SMILES
+format is a universal standard used in many cheminformatics software. Encoded
+in each SMILES string is structural information that can be used to predict
+complex chemical properties. In this work, we develop SMILES2vec, a deep RNN
+that automatically learns features from SMILES to predict chemical properties,
+without the need for additional explicit feature engineering. Using Bayesian
+optimization methods to tune the network architecture, we show that an
+optimized SMILES2vec model can serve as a general-purpose neural network for
+predicting distinct chemical properties including toxicity, activity,
+solubility and solvation energy, while also outperforming contemporary MLP
+neural networks that uses engineered features. Furthermore, we demonstrate
+proof-of-concept of interpretability by developing an explanation mask that
+localizes on the most important characters used in making a prediction. When
+tested on the solubility dataset, it identified specific parts of a chemical
+that is consistent with established first-principles knowledge with an accuracy
+of 88%. Our work demonstrates that neural networks can learn technically
+accurate chemical concept and provide state-of-the-art accuracy, making
+interpretable deep neural networks a useful tool of relevance to the chemical
+industry.",http://arxiv.org/abs/1712.02034v2
+6,Toxicity Prediction by Multimodal Deep Learning,"Prediction of toxicity levels of chemical compounds is an important issue in
+Quantitative Structure-Activity Relationship (QSAR) modeling. Although toxicity
+prediction has achieved significant progress in recent times through deep
+learning, prediction accuracy levels obtained by even very recent methods are
+not yet very high. We propose a multimodal deep learning method using multiple
+heterogeneous neural network types and data representations. We represent
+chemical compounds by strings, images, and numerical features. We train fully
+connected, convolutional, and recurrent neural networks and their ensembles.
+Each data representation or neural network type has its own strengths and
+weaknesses. Our motivation is to obtain a collective performance that could go
+beyond individual performance of each data representation or each neural
+network type. On a standard toxicity benchmark, our proposed method obtains
+significantly better accuracy levels than that by the state-of-the-art toxicity
+prediction methods.",http://arxiv.org/abs/1907.08333v1
+7,Accurate Clinical Toxicity Prediction using Multi-task Deep Neural Nets and Contrastive Molecular Explanations,"Explainable ML for molecular toxicity prediction is a promising approach for
+efficient drug development and chemical safety. A predictive ML model of
+toxicity can reduce experimental cost and time while mitigating ethical
+concerns by significantly reducing animal and clinical testing. Herein, we use
+a deep learning framework for simultaneously modeling in vitro, in vivo, and
+clinical toxicity data. Two different molecular input representations are used:
+Morgan fingerprints and pre-training SMILES embeddings. A multi-task deep
+learning model accurately predicts toxicity for all endpoints, including
+clinical, as indicated by AUROC and balanced accuracy. In particular, SMILES
+embeddings as input to the multi-task model improved clinical toxicity
+predictions compared to existing models in MoleculeNet benchmark. Additionally,
+our multi-task approach is comprehensive in the sense that it is comparable to
+state-of-the-art approaches for specific endpoints in in vitro, in vivo and
+clinical platforms. Through both the multi-task model and transfer learning, we
+were able to indicate the minimal need of in vivo data for clinical toxicity
+predictions. To provide confidence and explain the model's predictions, we
+adapt a post-hoc contrastive explanation method that returns pertinent positive
+and pertinent negative features, which correspond well to known mutagenic and
+reactive toxicophores, such as unsubstituted bonded heteroatoms, aromatic
+amines, and Michael receptors. Furthermore, toxicophore recovery by pertinent
+feature analysis captures more of the in vitro (53%) and in vivo (56%), rather
+than of the clinical (8%), endpoints, and indeed uncovers a preference in known
+toxicophore data towards in vitro and in vivo experimental data. To our
+knowledge, this is the first contrastive explanation, using both present and
+absent substructures, for predictions of clinical and in vivo molecular
+toxicity.",http://arxiv.org/abs/2204.06614v1
+8,CogMol: Target-Specific and Selective Drug Design for COVID-19 Using Deep Generative Models,"The novel nature of SARS-CoV-2 calls for the development of efficient de novo
+drug design approaches. In this study, we propose an end-to-end framework,
+named CogMol (Controlled Generation of Molecules), for designing new drug-like
+small molecules targeting novel viral proteins with high affinity and
+off-target selectivity. CogMol combines adaptive pre-training of a molecular
+SMILES Variational Autoencoder (VAE) and an efficient multi-attribute
+controlled sampling scheme that uses guidance from attribute predictors trained
+on latent features. To generate novel and optimal drug-like molecules for
+unseen viral targets, CogMol leverages a protein-molecule binding affinity
+predictor that is trained using SMILES VAE embeddings and protein sequence
+embeddings learned unsupervised from a large corpus. CogMol framework is
+applied to three SARS-CoV-2 target proteins: main protease, receptor-binding
+domain of the spike protein, and non-structural protein 9 replicase. The
+generated candidates are novel at both molecular and chemical scaffold levels
+when compared to the training data. CogMol also includes insilico screening for
+assessing toxicity of parent molecules and their metabolites with a multi-task
+toxicity classifier, synthetic feasibility with a chemical retrosynthesis
+predictor, and target structure binding with docking simulations. Docking
+reveals favorable binding of generated molecules to the target protein
+structure, where 87-95 % of high affinity molecules showed docking free energy
+< -6 kcal/mol. When compared to approved drugs, the majority of designed
+compounds show low parent molecule and metabolite toxicity and high synthetic
+feasibility. In summary, CogMol handles multi-constraint design of
+synthesizable, low-toxic, drug-like molecules with high target specificity and
+selectivity, and does not need target-dependent fine-tuning of the framework or
+target structure information.",http://arxiv.org/abs/2004.01215v2
+9,PotentialNet for Molecular Property Prediction,"The arc of drug discovery entails a multiparameter optimization problem
+spanning vast length scales. They key parameters range from solubility
+(angstroms) to protein-ligand binding (nanometers) to in vivo toxicity
+(meters). Through feature learning---instead of feature engineering---deep
+neural networks promise to outperform both traditional physics-based and
+knowledge-based machine learning models for predicting molecular properties
+pertinent to drug discovery. To this end, we present the PotentialNet family of
+graph convolutions. These models are specifically designed for and achieve
+state-of-the-art performance for protein-ligand binding affinity. We further
+validate these deep neural networks by setting new standards of performance in
+several ligand-based tasks. In parallel, we introduce a new metric, the
+Regression Enrichment Factor $EF_\chi^{(R)}$, to measure the early enrichment
+of computational models for chemical data. Finally, we introduce a
+cross-validation strategy based on structural homology clustering that can more
+accurately measure model generalizability, which crucially distinguishes the
+aims of machine learning for drug discovery from standard machine learning
+tasks.",http://arxiv.org/abs/1803.04465v2
+10,Step Change Improvement in ADMET Prediction with PotentialNet Deep Featurization,"The Absorption, Distribution, Metabolism, Elimination, and Toxicity (ADMET)
+properties of drug candidates are estimated to account for up to 50% of all
+clinical trial failures. Predicting ADMET properties has therefore been of
+great interest to the cheminformatics and medicinal chemistry communities in
+recent decades. Traditional cheminformatics approaches, whether the learner is
+a random forest or a deep neural network, leverage fixed fingerprint feature
+representations of molecules. In contrast, in this paper, we learn the features
+most relevant to each chemical task at hand by representing each molecule
+explicitly as a graph, where each node is an atom and each edge is a bond. By
+applying graph convolutions to this explicit molecular representation, we
+achieve, to our knowledge, unprecedented accuracy in prediction of ADMET
+properties. By challenging our methodology with rigorous cross-validation
+procedures and prospective analyses, we show that deep featurization better
+enables molecular predictors to not only interpolate but also extrapolate to
+new regions of chemical space.",http://arxiv.org/abs/1903.11789v1
+11,Are 2D fingerprints still valuable for drug discovery?,"Recently, molecular fingerprints extracted from three-dimensional (3D)
+structures using advanced mathematics, such as algebraic topology, differential
+geometry, and graph theory have been paired with efficient machine learning,
+especially deep learning algorithms to outperform other methods in drug
+discovery applications and competitions. This raises the question of whether
+classical 2D fingerprints are still valuable in computer-aided drug discovery.
+This work considers 23 datasets associated with four typical problems, namely
+protein-ligand binding, toxicity, solubility and partition coefficient to
+assess the performance of eight 2D fingerprints. Advanced machine learning
+algorithms including random forest, gradient boosted decision tree, single-task
+deep neural network and multitask deep neural network are employed to construct
+efficient 2D-fingerprint based models. Additionally, appropriate consensus
+models are built to further enhance the performance of 2D-fingerprintbased
+methods. It is demonstrated that 2D-fingerprint-based models perform as well as
+the state-of-the-art 3D structure-based models for the predictions of toxicity,
+solubility, partition coefficient and protein-ligand binding affinity based on
+only ligand information. However, 3D structure-based models outperform 2D
+fingerprint-based methods in complex-based protein-ligand binding affinity
+predictions.",http://arxiv.org/abs/1911.00930v1
+12,Machine Learning Small Molecule Properties in Drug Discovery,"Machine learning (ML) is a promising approach for predicting small molecule
+properties in drug discovery. Here, we provide a comprehensive overview of
+various ML methods introduced for this purpose in recent years. We review a
+wide range of properties, including binding affinities, solubility, and ADMET
+(Absorption, Distribution, Metabolism, Excretion, and Toxicity). We discuss
+existing popular datasets and molecular descriptors and embeddings, such as
+chemical fingerprints and graph-based neural networks. We highlight also
+challenges of predicting and optimizing multiple properties during hit-to-lead
+and lead optimization stages of drug discovery and explore briefly possible
+multi-objective optimization techniques that can be used to balance diverse
+properties while optimizing lead candidates. Finally, techniques to provide an
+understanding of model predictions, especially for critical decision-making in
+drug discovery are assessed. Overall, this review provides insights into the
+landscape of ML models for small molecule property predictions in drug
+discovery. So far, there are multiple diverse approaches, but their
+performances are often comparable. Neural networks, while more flexible, do not
+always outperform simpler models. This shows that the availability of
+high-quality training data remains crucial for training accurate models and
+there is a need for standardized benchmarks, additional performance metrics,
+and best practices to enable richer comparisons between the different
+techniques and models that can shed a better light on the differences between
+the many techniques.",http://arxiv.org/abs/2308.12354v1
+13,BERT Learns (and Teaches) Chemistry,"Modern computational organic chemistry is becoming increasingly data-driven.
+There remain a large number of important unsolved problems in this area such as
+product prediction given reactants, drug discovery, and metric-optimized
+molecule synthesis, but efforts to solve these problems using machine learning
+have also increased in recent years. In this work, we propose the use of
+attention to study functional groups and other property-impacting molecular
+substructures from a data-driven perspective, using a transformer-based model
+(BERT) on datasets of string representations of molecules and analyzing the
+behavior of its attention heads. We then apply the representations of
+functional groups and atoms learned by the model to tackle problems of
+toxicity, solubility, drug-likeness, and synthesis accessibility on smaller
+datasets using the learned representations as features for graph convolution
+and attention models on the graph structure of molecules, as well as
+fine-tuning of BERT. Finally, we propose the use of attention visualization as
+a helpful tool for chemistry practitioners and students to quickly identify
+important substructures in various chemical properties.",http://arxiv.org/abs/2007.16012v1
+14,Graph2MDA: a multi-modal variational graph embedding model for predicting microbe-drug associations,"Accumulated clinical studies show that microbes living in humans interact
+closely with human hosts, and get involved in modulating drug efficacy and drug
+toxicity. Microbes have become novel targets for the development of
+antibacterial agents. Therefore, screening of microbe-drug associations can
+benefit greatly drug research and development. With the increase of microbial
+genomic and pharmacological datasets, we are greatly motivated to develop an
+effective computational method to identify new microbe-drug associations. In
+this paper, we proposed a novel method, Graph2MDA, to predict microbe-drug
+associations by using variational graph autoencoder (VGAE). We constructed
+multi-modal attributed graphs based on multiple features of microbes and drugs,
+such as molecular structures, microbe genetic sequences, and function
+annotations. Taking as input the multi-modal attribute graphs, VGAE was trained
+to learn the informative and interpretable latent representations of each node
+and the whole graph, and then a deep neural network classifier was used to
+predict microbe-drug associations. The hyperparameter analysis and model
+ablation studies showed the sensitivity and robustness of our model. We
+evaluated our method on three independent datasets and the experimental results
+showed that our proposed method outperformed six existing state-of-the-art
+methods. We also explored the meaningness of the learned latent representations
+of drugs and found that the drugs show obvious clustering patterns that are
+significantly consistent with drug ATC classification. Moreover, we conducted
+case studies on two microbes and two drugs and found 75\%-95\% predicted
+associations have been reported in PubMed literature. Our extensive performance
+evaluations validated the effectiveness of our proposed method.\",http://arxiv.org/abs/2108.06338v1
+15,Benchmarking Toxic Molecule Classification using Graph Neural Networks and Few Shot Learning,"Traditional methods like Graph Convolutional Networks (GCNs) face challenges
+with limited data and class imbalance, leading to suboptimal performance in
+graph classification tasks during toxicity prediction of molecules as a whole.
+To address these issues, we harness the power of Graph Isomorphic Networks,
+Multi Headed Attention and Free Large-scale Adversarial Augmentation separately
+on Graphs for precisely capturing the structural data of molecules and their
+toxicological properties. Additionally, we incorporate Few-Shot Learning to
+improve the model's generalization with limited annotated samples. Extensive
+experiments on a diverse toxicology dataset demonstrate that our method
+achieves an impressive state-of-art AUC-ROC value of 0.816, surpassing the
+baseline GCN model by 11.4%. This highlights the significance of our proposed
+methodology and Few Shot Learning in advancing Toxic Molecular Classification,
+with the potential to enhance drug discovery and environmental risk assessment
+processes.",http://arxiv.org/abs/2311.13490v1
+16,The Graph Convolutional Network with Multi-representation Alignment for Drug Synergy Prediction,"Drug combination refers to the use of two or more drugs to treat a specific
+disease at the same time. It is currently the mainstream way to treat complex
+diseases. Compared with single drugs, drug combinations have better efficacy
+and can better inhibit toxicity and drug resistance. The computational model
+based on deep learning concatenates the representation of multiple drugs and
+the corresponding cell line feature as input, and the output is whether the
+drug combination can have an inhibitory effect on the cell line. However, this
+strategy of concatenating multiple representations has the following defects:
+the alignment of drug representation and cell line representation is ignored,
+resulting in the synergistic relationship not being reflected positionally in
+the embedding space. Moreover, the alignment measurement function in deep
+learning cannot be suitable for drug synergy prediction tasks due to
+differences in input types. Therefore, in this work, we propose a graph
+convolutional network with multi-representation alignment (GCNMRA) for
+predicting drug synergy. In the GCNMRA model, we designed a
+multi-representation alignment function suitable for the drug synergy
+prediction task so that the positional relationship between drug
+representations and cell line representation is reflected in the embedding
+space. In addition, the vector modulus of drug representations and cell line
+representation is considered to improve the accuracy of calculation results and
+accelerate model convergence. Finally, many relevant experiments were run on
+multiple drug synergy datasets to verify the effectiveness of the above
+innovative elements and the excellence of the GCNMRA model.",http://arxiv.org/abs/2311.16207v1
+17,Learning Graph-Level Representation for Drug Discovery,"Predicating macroscopic influences of drugs on human body, like efficacy and
+toxicity, is a central problem of small-molecule based drug discovery.
+Molecules can be represented as an undirected graph, and we can utilize graph
+convolution networks to predication molecular properties. However, graph
+convolutional networks and other graph neural networks all focus on learning
+node-level representation rather than graph-level representation. Previous
+works simply sum all feature vectors for all nodes in the graph to obtain the
+graph feature vector for drug predication. In this paper, we introduce a dummy
+super node that is connected with all nodes in the graph by a directed edge as
+the representation of the graph and modify the graph operation to help the
+dummy super node learn graph-level feature. Thus, we can handle graph-level
+classification and regression in the same way as node-level classification and
+regression. In addition, we apply focal loss to address class imbalance in drug
+datasets. The experiments on MoleculeNet show that our method can effectively
+improve the performance of molecular properties predication.",http://arxiv.org/abs/1709.03741v2
+18,Multi-objective generative AI for designing novel brain-targeting small molecules,"The strict selectivity of the blood-brain barrier (BBB) represents one of the
+most formidable challenges to successful central nervous system (CNS) drug
+delivery. Computational methods to generate BBB permeable drugs in silico may
+be valuable tools in the CNS drug design pipeline. However, in real-world
+applications, BBB penetration alone is insufficient; rather, after transiting
+the BBB, molecules must bind to a specific target or receptor in the brain and
+must also be safe and non-toxic. To discover small molecules that concurrently
+satisfy these constraints, we use multi-objective generative AI to synthesize
+drug-like BBB-permeable small molecules. Specifically, we computationally
+synthesize molecules with predicted binding affinity against dopamine receptor
+D2, the primary target for many clinically effective antipsychotic drugs. After
+training several graph neural network-based property predictors, we adapt
+SyntheMol (Swanson et al., 2024), a recently developed Monte Carlo Tree
+Search-based algorithm for antibiotic design, to perform a multi-objective
+guided traversal over an easily synthesizable molecular space. We design a
+library of 26,581 novel and diverse small molecules containing hits with high
+predicted BBB permeability and favorable predicted safety and toxicity
+profiles, and that could readily be synthesized for experimental validation in
+the wet lab. We also validate top scoring molecules with molecular docking
+simulation against the D2 receptor and demonstrate predicted binding affinity
+on par with risperidone, a clinically prescribed D2-targeting antipsychotic. In
+the future, the SyntheMol-based computational approach described here may
+enable the discovery of novel neurotherapeutics for currently intractable
+disorders of the CNS.",http://arxiv.org/abs/2407.00004v1
+19,Deep Learning Based Regression and Multi-class Models for Acute Oral Toxicity Prediction with Automatic Chemical Feature Extraction,"For quantitative structure-property relationship (QSPR) studies in
+chemoinformatics, it is important to get interpretable relationship between
+chemical properties and chemical features. However, the predictive power and
+interpretability of QSPR models are usually two different objectives that are
+difficult to achieve simultaneously. A deep learning architecture using
+molecular graph encoding convolutional neural networks (MGE-CNN) provided a
+universal strategy to construct interpretable QSPR models with high predictive
+power. Instead of using application-specific preset molecular descriptors or
+fingerprints, the models can be resolved using raw and pertinent features
+without manual intervention or selection. In this study, we developed acute
+oral toxicity (AOT) models of compounds using the MGE-CNN architecture as a
+case study. Three types of high-level predictive models: regression model
+(deepAOT-R), multi-classification model (deepAOT-C) and multi-task model
+(deepAOT-CR) for AOT evaluation were constructed. These models highly
+outperformed previously reported models. For the two external datasets
+containing 1673 (test set I) and 375 (test set II) compounds, the R2 and mean
+absolute error (MAE) of deepAOT-R on the test set I were 0.864 and 0.195, and
+the prediction accuracy of deepAOT-C was 95.5% and 96.3% on the test set I and
+II, respectively. The two external prediction accuracy of deepAOT-CR is 95.0%
+and 94.1%, while the R2 and MAE are 0.861 and 0.204 for test set I,
+respectively.",http://arxiv.org/abs/1704.04718v3
+20,Reliable Graph Neural Networks for Drug Discovery Under Distributional Shift,"The concern of overconfident mis-predictions under distributional shift
+demands extensive reliability research on Graph Neural Networks used in
+critical tasks in drug discovery. Here we first introduce CardioTox, a
+real-world benchmark on drug cardio-toxicity to facilitate such efforts. Our
+exploratory study shows overconfident mis-predictions are often distant from
+training data. That leads us to develop distance-aware GNNs: GNN-SNGP. Through
+evaluation on CardioTox and three established benchmarks, we demonstrate
+GNN-SNGP's effectiveness in increasing distance-awareness, reducing
+overconfident mis-predictions and making better calibrated predictions without
+sacrificing accuracy performance. Our ablation study further reveals the
+representation learned by GNN-SNGP improves distance-preservation over its base
+architecture and is one major factor for improvements.",http://arxiv.org/abs/2111.12951v1
+21,Expressive Graph Informer Networks,"Applying machine learning to molecules is challenging because of their
+natural representation as graphs rather than vectors.Several architectures have
+been recently proposed for deep learning from molecular graphs, but they suffer
+from informationbottlenecks because they only pass information from a graph
+node to its direct neighbors. Here, we introduce a more expressiveroute-based
+multi-attention mechanism that incorporates features from routes between node
+pairs. We call the resulting methodGraph Informer. A single network layer can
+therefore attend to nodes several steps away. We show empirically that the
+proposedmethod compares favorably against existing approaches in two prediction
+tasks: (1) 13C Nuclear Magnetic Resonance (NMR)spectra, improving the
+state-of-the-art with an MAE of 1.35 ppm and (2) predicting drug bioactivity
+and toxicity. Additionally, wedevelop a variant called injective Graph Informer
+that isprovablyas powerful as the Weisfeiler-Lehman test for graph
+isomorphism.Furthermore, we demonstrate that the route information allows the
+method to be informed about thenonlocal topologyof the graphand, thus, even go
+beyond the capabilities of the Weisfeiler-Lehman test.",http://arxiv.org/abs/1907.11318v2
+22,Improving Molecular Properties Prediction Through Latent Space Fusion,"Pre-trained Language Models have emerged as promising tools for predicting
+molecular properties, yet their development is in its early stages,
+necessitating further research to enhance their efficacy and address challenges
+such as generalization and sample efficiency. In this paper, we present a
+multi-view approach that combines latent spaces derived from state-of-the-art
+chemical models. Our approach relies on two pivotal elements: the embeddings
+derived from MHG-GNN, which represent molecular structures as graphs, and
+MoLFormer embeddings rooted in chemical language. The attention mechanism of
+MoLFormer is able to identify relations between two atoms even when their
+distance is far apart, while the GNN of MHG-GNN can more precisely capture
+relations among multiple atoms closely located. In this work, we demonstrate
+the superior performance of our proposed multi-view approach compared to
+existing state-of-the-art methods, including MoLFormer-XL, which was trained on
+1.1 billion molecules, particularly in intricate tasks such as predicting
+clinical trial drug toxicity and inhibiting HIV replication. We assessed our
+approach using six benchmark datasets from MoleculeNet, where it outperformed
+competitors in five of them. Our study highlights the potential of latent space
+fusion and feature integration for advancing molecular property prediction. In
+this work, we use small versions of MHG-GNN and MoLFormer, which opens up an
+opportunity for further improvement when our approach uses a larger-scale
+dataset.",http://arxiv.org/abs/2310.13802v1
+23,Discovering Molecular Functional Groups Using Graph Convolutional Neural Networks,"Functional groups (FGs) are molecular substructures that are served as a
+foundation for analyzing and predicting chemical properties of molecules.
+Automatic discovery of FGs will impact various fields of research, including
+medicinal chemistry and material sciences, by reducing the amount of lab
+experiments required for discovery or synthesis of new molecules. In this
+paper, we investigate methods based on graph convolutional neural networks
+(GCNNs) for localizing FGs that contribute to specific chemical properties of
+interest. In our framework, molecules are modeled as undirected relational
+graphs with atoms as nodes and bonds as edges. Using this relational graph
+structure, we trained GCNNs in a supervised way on experimentally-validated
+molecular training sets to predict specific chemical properties, e.g.,
+toxicity. Upon learning a GCNN, we analyzed its activation patterns to
+automatically identify FGs using four different explainability methods that we
+have developed: gradient-based saliency maps, Class Activation Mapping (CAM),
+gradient-weighted CAM (Grad-CAM), and Excitation Back-Propagation. Although
+these methods are originally derived for convolutional neural networks (CNNs),
+we adapt them to develop the corresponding suitable versions for GCNNs. We
+evaluated the contrastive power of these methods with respect to the
+specificity of the identified molecular substructures and their relevance for
+chemical functions. Grad-CAM had the highest contrastive power and generated
+qualitatively the best FGs. This work paves the way for automatic analysis and
+design of new molecules.",http://arxiv.org/abs/1812.00265v3
+24,Interpretable Molecular Graph Generation via Monotonic Constraints,"Designing molecules with specific properties is a long-lasting research
+problem and is central to advancing crucial domains such as drug discovery and
+material science. Recent advances in deep graph generative models treat
+molecule design as graph generation problems which provide new opportunities
+toward the breakthrough of this long-lasting problem. Existing models, however,
+have many shortcomings, including poor interpretability and controllability
+toward desired molecular properties. This paper focuses on new methodologies
+for molecule generation with interpretable and controllable deep generative
+models, by proposing new monotonically-regularized graph variational
+autoencoders. The proposed models learn to represent the molecules with latent
+variables and then learn the correspondence between them and molecule
+properties parameterized by polynomial functions. To further improve the
+intepretability and controllability of molecule generation towards desired
+properties, we derive new objectives which further enforce monotonicity of the
+relation between some latent variables and target molecule properties such as
+toxicity and clogP. Extensive experimental evaluation demonstrates the
+superiority of the proposed framework on accuracy, novelty, disentanglement,
+and control towards desired molecular properties. The code is open-source at
+https://anonymous.4open.science/r/MDVAE-FD2C.",http://arxiv.org/abs/2203.00412v1
+25,M-Evolve: Structural-Mapping-Based Data Augmentation for Graph Classification,"Graph classification, which aims to identify the category labels of graphs,
+plays a significant role in drug classification, toxicity detection, protein
+analysis etc. However, the limitation of scale in the benchmark datasets makes
+it easy for graph classification models to fall into over-fitting and
+undergeneralization. To improve this, we introduce data augmentation on graphs
+(i.e. graph augmentation) and present four methods:random mapping,
+vertex-similarity mapping, motif-random mapping and motif-similarity mapping,
+to generate more weakly labeled data for small-scale benchmark datasets via
+heuristic transformation of graph structures. Furthermore, we propose a generic
+model evolution framework, named M-Evolve, which combines graph augmentation,
+data filtration and model retraining to optimize pre-trained graph classifiers.
+Experiments on six benchmark datasets demonstrate that the proposed framework
+helps existing graph classification models alleviate over-fitting and
+undergeneralization in the training on small-scale benchmark datasets, which
+successfully yields an average improvement of 3 - 13% accuracy on graph
+classification tasks.",http://arxiv.org/abs/2007.05700v4
+26,A Review of Biomedical Datasets Relating to Drug Discovery: A Knowledge Graph Perspective,"Drug discovery and development is a complex and costly process. Machine
+learning approaches are being investigated to help improve the effectiveness
+and speed of multiple stages of the drug discovery pipeline. Of these, those
+that use Knowledge Graphs (KG) have promise in many tasks, including drug
+repurposing, drug toxicity prediction and target gene-disease prioritisation.
+In a drug discovery KG, crucial elements including genes, diseases and drugs
+are represented as entities, whilst relationships between them indicate an
+interaction. However, to construct high-quality KGs, suitable data is required.
+In this review, we detail publicly available sources suitable for use in
+constructing drug discovery focused KGs. We aim to help guide machine learning
+and KG practitioners who are interested in applying new techniques to the drug
+discovery field, but who may be unfamiliar with the relevant data sources. The
+datasets are selected via strict criteria, categorised according to the primary
+type of information contained within and are considered based upon what
+information could be extracted to build a KG. We then present a comparative
+analysis of existing public drug discovery KGs and a evaluation of selected
+motivating case studies from the literature. Additionally, we raise numerous
+and unique challenges and issues associated with the domain and its datasets,
+whilst also highlighting key future research directions. We hope this review
+will motivate KGs use in solving key and emerging questions in the drug
+discovery domain.",http://arxiv.org/abs/2102.10062v4
+27,Data Augmentation for Graph Classification,"Graph classification, which aims to identify the category labels of graphs,
+plays a significant role in drug classification, toxicity detection, protein
+analysis etc. However, the limitation of scale of benchmark datasets makes it
+easy for graph classification models to fall into over-fitting and
+undergeneralization. Towards this, we introduce data augmentation on graphs and
+present two heuristic algorithms: random mapping and motif-similarity mapping,
+to generate more weakly labeled data for small-scale benchmark datasets via
+heuristic modification of graph structures. Furthermore, we propose a generic
+model evolution framework, M-Evolve, which combines graph augmentation, data
+filtration and model retraining to optimize pre-trained graph classifiers.
+Experiments conducted on six benchmark datasets demonstrate that M-Evolve helps
+existing graph classification models alleviate over-fitting when training on
+small-scale benchmark datasets and yields an average improvement of 3-12%
+accuracy on graph classification tasks.",http://arxiv.org/abs/2009.09863v1
+28,Discovery of Stable Hybrid Organic-inorganic Double Perovskites for High-performance Solar Cells via Machine-learning Algorithms and Crystal Graph Convolution Neural Network Method,"Hybrid peroskite solar cells are newly emergent high-performance photovoltaic
+devices, which suffer from disadvantages such as toxic elements, short-term
+stabilities, and so on. Searching for alternative perovskites with high
+photovoltaic performances and thermally stabilities is urgent in this field. In
+this work, stimulated by the recently proposed materials-genome initiative
+project, firstly we build classical machine-learning algorithms for the models
+of formation energies, bangdaps and Deybe temperatures for hybrid
+organic-inorganic double perovskites, then we choose the high-precision models
+to screen a large scale of double-perovskite chemical space, to filter out good
+pervoskite candidates for solar cells. We also analyze features of importances
+for the the three target properties to reveal the underlying mechanisms and
+discover the typical characteristics of high-performances double perovskites.
+Secondly we adopt the Crystal graph convolution neural network (CGCNN), to
+build precise model for bandgaps of perovskites for further filtering. Finally
+we use the ab-initio method to verify the results predicted by the CGCNN
+method, and find that, six out of twenty randomly chosen (CH3)2NH2-based HOIDP
+candidates possess finite bandgaps, and especially, (CH3)2NH2AuSbCl6 and
+(CH3)2NH2CsPdF6 possess the bandgaps of 0.633 eV and 0.504 eV, which are
+appropriate for photovoltaic applications. Our work not only provides a large
+scale of potential high-performance double-perovskite candidates for futural
+experimental or theoretical verification, but also showcases the effective and
+powerful prediction of the combined ML and CGCNN method proposed for the first
+time here.",http://arxiv.org/abs/2308.00490v1
+29,Beyond Chemical Language: A Multimodal Approach to Enhance Molecular Property Prediction,"We present a novel multimodal language model approach for predicting
+molecular properties by combining chemical language representation with
+physicochemical features. Our approach, MULTIMODAL-MOLFORMER, utilizes a causal
+multistage feature selection method that identifies physicochemical features
+based on their direct causal effect on a specific target property. These causal
+features are then integrated with the vector space generated by molecular
+embeddings from MOLFORMER. In particular, we employ Mordred descriptors as
+physicochemical features and identify the Markov blanket of the target
+property, which theoretically contains the most relevant features for accurate
+prediction. Our results demonstrate a superior performance of our proposed
+approach compared to existing state-of-the-art algorithms, including the
+chemical language-based MOLFORMER and graph neural networks, in predicting
+complex tasks such as biodegradability and PFAS toxicity estimation. Moreover,
+we demonstrate the effectiveness of our feature selection method in reducing
+the dimensionality of the Mordred feature space while maintaining or improving
+the model's performance. Our approach opens up promising avenues for future
+research in molecular property prediction by harnessing the synergistic
+potential of both chemical language and physicochemical features, leading to
+enhanced performance and advancements in the field.",http://arxiv.org/abs/2306.14919v1
+30,Understanding Adverse Biological Effect Predictions Using Knowledge Graphs,"Extrapolation of adverse biological (toxic) effects of chemicals is an
+important contribution to expand available hazard data in (eco)toxicology
+without the use of animals in laboratory experiments. In this work, we
+extrapolate effects based on a knowledge graph (KG) consisting of the most
+relevant effect data as domain-specific background knowledge. An effect
+prediction model, with and without background knowledge, was used to predict
+mean adverse biological effect concentration of chemicals as a prototypical
+type of stressors. The background knowledge improves the model prediction
+performance by up to 40\% in terms of $R^2$ (\ie coefficient of determination).
+We use the KG and KG embeddings to provide quantitative and qualitative
+insights into the predictions. These insights are expected to improve the
+confidence in effect prediction. Larger scale implementation of such
+extrapolation models should be expected to support hazard and risk assessment,
+by simplifying and reducing testing needs.",http://arxiv.org/abs/2210.15985v1
+31,A review of mathematical representations of biomolecules,"Recently, machine learning (ML) has established itself in various worldwide
+benchmarking competitions in computational biology, including Critical
+Assessment of Structure Prediction (CASP) and Drug Design Data Resource (D3R)
+Grand Challenges. However, the intricate structural complexity and high ML
+dimensionality of biomolecular datasets obstruct the efficient application of
+ML algorithms in the field. In addition to data and algorithm, an efficient ML
+machinery for biomolecular predictions must include structural representation
+as an indispensable component. Mathematical representations that simplify the
+biomolecular structural complexity and reduce ML dimensionality have emerged as
+a prime winner in D3R Grand Challenges. This review is devoted to the recent
+advances in developing low-dimensional and scalable mathematical
+representations of biomolecules in our laboratory. We discuss three classes of
+mathematical approaches, including algebraic topology, differential geometry,
+and graph theory. We elucidate how the physical and biological challenges have
+guided the evolution and development of these mathematical apparatuses for
+massive and diverse biomolecular data. We focus the performance analysis on the
+protein-ligand binding predictions in this review although these methods have
+had tremendous success in many other applications, such as protein
+classification, virtual screening, and the predictions of solubility, solvation
+free energy, toxicity, partition coefficient, protein folding stability changes
+upon mutation, etc.",http://arxiv.org/abs/1912.04724v1
